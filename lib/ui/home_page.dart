@@ -91,7 +91,7 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  Widget _createGifTable(BuildContext context, AsyncSnapshot snapshot){
+  Widget _createGifTable(context, snapshot){
 
     return GridView.builder(
       padding: EdgeInsets.all(10.0),
