@@ -64,9 +64,9 @@ class _HomePageState extends State<HomePage> {
              child: FutureBuilder(
                future: _getGifs(),
                builder: (context, snapshot){
-                 switch(snapshot.connectionState){
-                   case ConnectionState.waiting:
-                    case ConnectionState.done:
+                  switch(snapshot.connectionState){
+                    case ConnectionState.waiting:
+                    case ConnectionState.none:
                       return Container(
                         width: 200.0,
                         height: 200.0,
